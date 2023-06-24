@@ -18,7 +18,7 @@ pipeline {
         stage('Maven-Deploy') {
             steps {
                 sh '''
-                echo 'Deploying Package'
+                echo 'Deploying Package into Tomcat server'
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
