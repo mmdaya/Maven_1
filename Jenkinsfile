@@ -8,10 +8,11 @@ pipeline {
         stage('Maven-Build') {
             steps {
                 sh '''
-        echo 'Build maven package'
-        ls
-        mvn clean package
-        '''
+                cd /simple-war/
+                echo 'Build maven package'
+                ls
+                mvn clean package
+                '''
             }
         }
     }
