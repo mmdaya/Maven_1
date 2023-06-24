@@ -8,7 +8,7 @@ pipeline {
         stage('Maven-Build') {
             steps {
                 sh '''
-                cd /simple-war/
+                cd simple-war/
                 echo 'Build maven package'
                 ls
                 mvn clean package
