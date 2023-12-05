@@ -13,14 +13,14 @@ pipeline {
                 ls
                 mvn clean package
                 '''
+                echo 'Build maven package----done ---done'
             }
         }
-       stage('Maven-Deploy') {
+ /*   stage('Maven-Deploy') { 
             steps {
                 sh '''
                 echo 'Deploying Package into Tomcat server..'
                 '''
-            }
                 script {
                     /* groovylint-disable-next-line LineLength 
                     deploy adapters: [tomcat9(credentialsId: 'Tomcat-Manager-Deploy', path: '',
