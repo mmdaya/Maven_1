@@ -15,7 +15,7 @@ pipeline {
                 '''
             }
         }
-        stage('Maven-Deploy') {
+ //      stage('Maven-Deploy') {
             steps {
                 sh '''
                 echo 'Deploying Package into Tomcat server..'
@@ -27,6 +27,6 @@ pipeline {
                     contextPath: null, war: 'simple-war/target/itdefined-war-1.0.0.war'
                 }
             }
-        }
+        } //
     }
 }
