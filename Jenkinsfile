@@ -25,6 +25,7 @@ pipeline {
                 echo 'Deploying Package into Tomcat server..'
                 pwd
                 cd simple-war/target/
+                pwd
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
