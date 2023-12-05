@@ -17,18 +17,18 @@ pipeline {
                 echo '----done ---done'
             }
         }
- /*   stage('Maven-Deploy') { 
+   stage('Maven-Deploy') { 
             steps {
                 sh '''
                 echo 'Deploying Package into Tomcat server..'
                 '''
                 script {
-                    /* groovylint-disable-next-line LineLength 
-                    deploy adapters: [tomcat9(credentialsId: 'Tomcat-Manager-Deploy', path: '',
-                    url: 'http://3.7.68.232:8080/')],
+                    /* groovylint-disable-next-line LineLength */
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat-manager', path: '',
+                    url: 'http://18.191.242.81:8081/')],
                     contextPath: null, war: 'simple-war/target/itdefined-war-1.0.0.war'
                 }
             }
-        } */
+        }
     }
 }
