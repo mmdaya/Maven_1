@@ -23,6 +23,7 @@ pipeline {
             steps {
                 sh '''
                 echo 'Deploying Package into Tomcat server..'
+                pwd
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
