@@ -26,7 +26,7 @@ pipeline {
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat-manager', path: '',
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '',
                     url: 'http://18.191.242.81:8081/')],
                     contextPath: '/itdefined-war-1.0.0', 
                     onFailure: false, 
