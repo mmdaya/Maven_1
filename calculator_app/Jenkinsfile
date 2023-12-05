@@ -42,9 +42,9 @@ pipeline {
       stage ('Deploy Tomcat Using jenkins plugin') {
          steps {
                 script {
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat-manager', path: '', url: 'http://18.191.242.81:8081/')], 
+                    deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '', url: 'http://18.191.242.81:8081/')], 
                                      contextPath: '/calculator', 
-                                     war: 'maven/calculator_app/target/calculator.war'
+                                     war: 'calculator_app/target/calculator.war'
                 }
          }
       }
