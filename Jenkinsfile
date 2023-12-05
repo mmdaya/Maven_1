@@ -12,6 +12,7 @@ pipeline {
                 echo 'Build maven package'
                 ls
                 mvn clean package
+                pwd
                 '''
                 echo 'Build maven package----done ---done'
                 echo '----done ---done'
