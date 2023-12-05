@@ -13,6 +13,7 @@ pipeline {
                 ls
                 mvn clean package
                 pwd
+                cd ./target/
                 '''
                 echo 'Build maven package----done ---done'
                 echo '----done ---done'
