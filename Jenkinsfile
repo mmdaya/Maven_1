@@ -31,7 +31,7 @@ pipeline {
                     url: 'http://18.191.242.81:8081/')],
                     contextPath: '/itdefined-war-1.0.0', 
                     onFailure: false, 
-                    war: 'maven/simple-war/target/itdefined-war-1.0.0.war'
+                    war: 'simple-war/target/itdefined-war-1.0.0.war'
                 }
             }
         }
