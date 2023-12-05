@@ -26,6 +26,7 @@ pipeline {
                 pwd
                 cd simple-war/target/
                 pwd
+                ls
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
