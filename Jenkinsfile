@@ -14,6 +14,7 @@ pipeline {
                 mvn clean package
                 '''
                 echo 'Build maven package----done ---done'
+                echo '----done ---done'
             }
         }
  /*   stage('Maven-Deploy') { 
