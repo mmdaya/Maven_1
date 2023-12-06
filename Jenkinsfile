@@ -16,7 +16,7 @@ pipeline {
                 cd ./target/
                 '''
                 echo 'Build maven package----done ---done'
-                echo '----done ---done'
+                echo '----done ---done---'
             }
         }
    stage('Maven-Deploy') { 
