@@ -27,11 +27,10 @@ pipeline {
                 '''
                 script {
                     /* groovylint-disable-next-line LineLength */
-                    deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '',
-                    url: 'http://18.191.242.81:8081/')],
-                    contextPath: '/itdefined-war-1.0.0', 
-                    onFailure: false, 
-                    war: 'simple-war/target/itdefined-war-1.0.0.war'
+                   deploy adapters: [tomcat9(credentialsId: 'tomcat_manager', path: '',
+                   url: 'http://3.144.169.57:8081/')], 
+                   contextPath: 'http://3.144.169.57:8081/', 
+                   war: 'simple-war/target/itdefined-war-1.0.0'
                 }
             }
         }
