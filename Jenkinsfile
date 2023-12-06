@@ -31,7 +31,7 @@ pipeline {
                     url: 'http://3.144.169.57:8080/')],
                     contextPath: '/itdefined-war-1.0.0', 
                     onFailure: false, 
-                    war: 'simple-war/target/itdefined-war-1.0.0.war'
+                    war: '/simple-war/target/itdefined-war-1.0.0.war'
 
                    
                 }
